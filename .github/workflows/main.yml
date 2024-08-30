@@ -1,5 +1,5 @@
 name: DevSecOps Pipeline
-on: pull_request
+on: [push]
   branches: master, main
 jobs: 
   sonarcloud:
