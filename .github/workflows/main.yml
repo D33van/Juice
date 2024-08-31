@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install dependencies
+     # - name: Install dependencies
         run: npm install
-
+#
       - name: Build application
         run: npm run build
     continue-on-error: true  # Continue even if the build fails
