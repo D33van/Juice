@@ -36,7 +36,6 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-
       - name: Install SonarQube Scanner
         run: |
           wget -qO- https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip | jar x
@@ -49,7 +48,7 @@ jobs:
           sonar-scanner \
             -Dsonar.projectKey=your_project_key \
             -Dsonar.sources=. \
-            -Dsonar.host.url=https://your-sonarqube-server.com \
+            -Dsonar.host.url=http://5.180.151.215:9000/ \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
     continue-on-error: true  # Continue even if the SAST scan fails
 
