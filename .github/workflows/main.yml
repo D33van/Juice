@@ -15,14 +15,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
+   #   - name: Set up Node.js
+  #      uses: actions/setup-node@v3
+    #    with:
+     #     node-version: '16'
      # - name: Install dependencies
-        run: npm install
-#
+       # run: npm install
       - name: Build application
         run: npm run build
     continue-on-error: true  # Continue even if the build fails
